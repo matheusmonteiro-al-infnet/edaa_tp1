@@ -1,0 +1,24 @@
+Heap válida - construída pela classe
+array: [50, 30, 40, 10, 20, 35, 25]
+resultado: válida
+
+Heap válida - um elemento
+array: [42]
+resultado: válida
+
+Heap válida - array vazio
+array: []
+resultado: válida
+
+Inválida - violação na raiz
+array: [40, 50, 30]
+resultado: inválida -> array[1]=50 > array[0]=40
+
+Inválida - violação na subárvore esquerda
+array: [50, 30, 40, 10, 45, 35, 25]
+resultado: inválida -> array[4]=45 > array[1]=30
+
+Inválida - violação na subárvore direita
+array: [50, 30, 20, 10, 25, 15, 30]
+resultado: inválida -> array[6]=30 > array[2]=20
+

@@ -1,0 +1,16 @@
+Caso 1 - valor existente (sift-up):
+delete(70)
+antes: [100, 80, 90, 60, 70, 85, 88]
+trocas: [(4, 1)]
+depois: [100, 88, 90, 60, 80, 85]
+
+Caso 2 - valor existente (sift-down):
+delete(100)
+antes: [100, 80, 90, 60, 70, 85, 88]
+trocas: [(0, 2)]
+depois: [90, 80, 88, 60, 70, 85]
+
+Caso 3 - valor inexistente:
+delete(999)
+antes: [100, 80, 90, 60, 70, 85, 88]
+valor 999 não encontrado na heap

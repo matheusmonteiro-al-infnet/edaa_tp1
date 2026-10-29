@@ -1,0 +1,70 @@
+1 elemento
+inicial: [42]
+nenhum sift-down necessário (array já é heap válida)
+final: [42] válida=True
+
+2 elementos
+inicial: [1, 5]
+sift-down i=0: trocas=[(0, 1)] -> [5, 1]
+final: [5, 1] válida=True
+
+Array arbitrário (7)
+inicial: [5, 3, 8, 1, 7, 2, 9]
+sift-down i=2: trocas=[(2, 6)] -> [5, 3, 9, 1, 7, 2, 8]
+sift-down i=1: trocas=[(1, 4)] -> [5, 7, 9, 1, 3, 2, 8]
+sift-down i=0: trocas=[(0, 2), (2, 6)] -> [9, 7, 8, 1, 3, 2, 5]
+final: [9, 7, 8, 1, 3, 2, 5] válida=True
+
+Ordem crescente (7)
+inicial: [1, 2, 3, 4, 5, 6, 7]
+sift-down i=2: trocas=[(2, 6)] -> [1, 2, 7, 4, 5, 6, 3]
+sift-down i=1: trocas=[(1, 4)] -> [1, 5, 7, 4, 2, 6, 3]
+sift-down i=0: trocas=[(0, 2), (2, 5)] -> [7, 5, 6, 4, 2, 1, 3]
+final: [7, 5, 6, 4, 2, 1, 3] válida=True
+
+Ordem decrescente (7)
+inicial: [7, 6, 5, 4, 3, 2, 1]
+sift-down i=2: trocas=[] -> [7, 6, 5, 4, 3, 2, 1]
+sift-down i=1: trocas=[] -> [7, 6, 5, 4, 3, 2, 1]
+sift-down i=0: trocas=[] -> [7, 6, 5, 4, 3, 2, 1]
+final: [7, 6, 5, 4, 3, 2, 1] válida=True
+
+Array arbitrário (10)
+inicial: [4, 10, 3, 5, 1, 8, 9, 2, 7, 6]
+sift-down i=4: trocas=[(4, 9)] -> [4, 10, 3, 5, 6, 8, 9, 2, 7, 1]
+sift-down i=3: trocas=[(3, 8)] -> [4, 10, 3, 7, 6, 8, 9, 2, 5, 1]
+sift-down i=2: trocas=[(2, 6)] -> [4, 10, 9, 7, 6, 8, 3, 2, 5, 1]
+sift-down i=1: trocas=[] -> [4, 10, 9, 7, 6, 8, 3, 2, 5, 1]
+sift-down i=0: trocas=[(0, 1), (1, 3), (3, 8)] -> [10, 7, 9, 5, 6, 8, 3, 2, 4, 1]
+final: [10, 7, 9, 5, 6, 8, 3, 2, 4, 1] válida=True
+
+Ordem crescente (15)
+inicial: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+sift-down i=6: trocas=[(6, 14)] -> [1, 2, 3, 4, 5, 6, 15, 8, 9, 10, 11, 12, 13, 14, 7]
+sift-down i=5: trocas=[(5, 12)] -> [1, 2, 3, 4, 5, 13, 15, 8, 9, 10, 11, 12, 6, 14, 7]
+sift-down i=4: trocas=[(4, 10)] -> [1, 2, 3, 4, 11, 13, 15, 8, 9, 10, 5, 12, 6, 14, 7]
+sift-down i=3: trocas=[(3, 8)] -> [1, 2, 3, 9, 11, 13, 15, 8, 4, 10, 5, 12, 6, 14, 7]
+sift-down i=2: trocas=[(2, 6), (6, 13)] -> [1, 2, 15, 9, 11, 13, 14, 8, 4, 10, 5, 12, 6, 3, 7]
+sift-down i=1: trocas=[(1, 4), (4, 9)] -> [1, 11, 15, 9, 10, 13, 14, 8, 4, 2, 5, 12, 6, 3, 7]
+sift-down i=0: trocas=[(0, 2), (2, 6), (6, 14)] -> [15, 11, 14, 9, 10, 13, 7, 8, 4, 2, 5, 12, 6, 3, 1]
+final: [15, 11, 14, 9, 10, 13, 7, 8, 4, 2, 5, 12, 6, 3, 1] válida=True
+
+build_heap por padrão de entrada (média de 5 execuções; todas as heaps válidas)
+| padrão        |     n |   passos |   trocas |   passos/n |
+|---------------|-------|----------|----------|------------|
+| sorted        |    10 |    22.00 |     8.00 |       2.20 |
+| sorted        |   100 |   286.00 |    96.00 |       2.86 |
+| sorted        |  1000 |  2974.00 |   992.00 |       2.97 |
+| sorted        | 10000 | 29974.00 |  9992.00 |       3.00 |
+| reverse       |    10 |     9.00 |     0.00 |       0.90 |
+| reverse       |   100 |    99.00 |     0.00 |       0.99 |
+| reverse       |  1000 |   999.00 |     0.00 |       1.00 |
+| reverse       | 10000 |  9999.00 |     0.00 |       1.00 |
+| random        |    10 |    17.80 |     4.80 |       1.78 |
+| random        |   100 |   247.20 |    69.20 |       2.47 |
+| random        |  1000 |  2601.00 |   730.40 |       2.60 |
+| random        | 10000 | 26198.00 |  7420.80 |       2.62 |
+| nearly_sorted |    10 |    22.00 |     8.00 |       2.20 |
+| nearly_sorted |   100 |   281.20 |    93.00 |       2.81 |
+| nearly_sorted |  1000 |  2941.40 |   973.40 |       2.94 |
+| nearly_sorted | 10000 | 29554.80 |  9752.60 |       2.96 |

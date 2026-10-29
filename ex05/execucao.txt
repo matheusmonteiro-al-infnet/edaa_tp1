@@ -1,0 +1,13 @@
+Array: [50, 30, 40, 10, 20, 35, 25]
+
+contains(35): encontrado
+índices visitados: [0, 1, 2, 3, 4, 5]
+comparações: 6/7
+
+contains(20): encontrado
+índices visitados: [0, 1, 2, 3, 4]
+comparações: 5/7
+
+contains(99): não encontrado
+índices visitados: [0, 1, 2, 3, 4, 5, 6]
+comparações: 7/7

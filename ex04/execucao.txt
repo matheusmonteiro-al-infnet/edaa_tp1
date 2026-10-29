@@ -1,0 +1,29 @@
+Heap inicial: [40, 20, 35, 10, 15, 30, 25]
+
+Passo 1: extract_max() -> 40
+trocas (sift-down): [(0, 2), (2, 5)]
+array resultante: [35, 20, 30, 10, 15, 25]
+
+Passo 2: extract_max() -> 35
+trocas (sift-down): [(0, 2)]
+array resultante: [30, 20, 25, 10, 15]
+
+Passo 3: extract_max() -> 30
+trocas (sift-down): [(0, 2)]
+array resultante: [25, 20, 15, 10]
+
+Passo 4: extract_max() -> 25
+trocas (sift-down): [(0, 1)]
+array resultante: [20, 10, 15]
+
+Passo 5: extract_max() -> 20
+trocas (sift-down): []
+array resultante: [15, 10]
+
+Passo 6: extract_max() -> 15
+trocas (sift-down): []
+array resultante: [10]
+
+Passo 7: extract_max() -> 10
+trocas (sift-down): []
+array resultante: []

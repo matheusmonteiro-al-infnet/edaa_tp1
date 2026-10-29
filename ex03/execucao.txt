@@ -1,0 +1,43 @@
+
+Crescente: [10, 20, 30, 40, 50]
+insert(10) -> trocas: []
+insert(20) -> trocas: [(1, 0)]
+insert(30) -> trocas: [(2, 0)]
+insert(40) -> trocas: [(3, 1), (1, 0)]
+insert(50) -> trocas: [(4, 1), (1, 0)]
+total de trocas: 6
+
+Decrescente: [50, 40, 30, 20, 10]
+insert(50) -> trocas: []
+insert(40) -> trocas: []
+insert(30) -> trocas: []
+insert(20) -> trocas: []
+insert(10) -> trocas: []
+total de trocas: 0
+
+Aleatória: [30, 10, 50, 20, 40]
+insert(30) -> trocas: []
+insert(10) -> trocas: []
+insert(50) -> trocas: [(2, 0)]
+insert(20) -> trocas: [(3, 1)]
+insert(40) -> trocas: [(4, 1)]
+total de trocas: 3
+Trocas na inserção por padrão de entrada (média de 5 execuções)
+| padrão        |     n |    trocas |   trocas/inserção |   log2 n (altura) |
+|---------------|-------|-----------|-------------------|-------------------|
+| sorted        |    10 |     19.00 |              1.90 |              3.32 |
+| sorted        |   100 |    480.00 |              4.80 |              6.64 |
+| sorted        |  1000 |   7987.00 |              7.99 |              9.97 |
+| sorted        | 10000 | 113631.00 |             11.36 |             13.29 |
+| reverse       |    10 |      0.00 |              0.00 |              3.32 |
+| reverse       |   100 |      0.00 |              0.00 |              6.64 |
+| reverse       |  1000 |      0.00 |              0.00 |              9.97 |
+| reverse       | 10000 |      0.00 |              0.00 |             13.29 |
+| random        |    10 |      6.20 |              0.62 |              3.32 |
+| random        |   100 |    108.00 |              1.08 |              6.64 |
+| random        |  1000 |   1243.40 |              1.24 |              9.97 |
+| random        | 10000 |  12678.60 |              1.27 |             13.29 |
+| nearly_sorted |    10 |     15.60 |              1.56 |              3.32 |
+| nearly_sorted |   100 |    349.20 |              3.49 |              6.64 |
+| nearly_sorted |  1000 |   4285.40 |              4.29 |              9.97 |
+| nearly_sorted | 10000 |  44389.20 |              4.44 |             13.29 |
