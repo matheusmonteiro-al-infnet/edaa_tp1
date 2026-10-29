@@ -47,14 +47,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-No Git Bash (Windows), a ativação é `source .venv/Scripts/activate`.
-
-Se o PowerShell bloquear a ativação ("a execução de scripts foi desabilitada"), libere scripts locais para o seu usuário e tente de novo:
-
-```
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
-
 ### 2. Executar um exercício
 
 Com o ambiente ativado, cada exercício roda como módulo, pelo nome da pasta:
